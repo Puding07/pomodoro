@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+before_script:
+  - echo geting updates...
+  - apt update -qy
+  - echo installing lftp
+  - apt install -y lftp
+
+Delivering production:
+  stage: build
+  image: node:latest
+  script:
+    - echo Building...
+    - npm i
+    - npm run build
+  only:
+    - master
+  artifacts:
+    paths:
+      - build/
+
+Deploying to server:
+  stage: deploy
+  script:
+    - echo Deploying...
+    - lftp -e "set ssl:verify-certificate no; open ftp.artonwork.com; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X -*/ --reverse --verbose --delete build/ pomodoro/; bye"
+  only:
+    - master

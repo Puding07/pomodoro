@@ -1,0 +1,91 @@
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.settings h2 {
+  width: 100%;
+  padding-bottom: 0.3rem;
+  color: whitesmoke;
+  font-size: 210%;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #00000094;
+}
+
+.settings table {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .settings table {
+    width: 80%;
+  }
+}
+
+.settings table tr {
+  height: 5vh;
+}
+
+.settings table th {
+  color: #78c13d;
+  text-align: left;
+  font-size: 135%;
+}
+
+.settings table td {
+  text-align: center;
+}
+
+.settings table td button {
+  cursor: pointer;
+  border: none;
+  font-size: 185%;
+  background-color: transparent;
+}
+
+.settings .description {
+  color: #0000009d;
+  font-size: 165%;
+}
+
+.settings a {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 120%;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 15px #000000b4;
+          box-shadow: 0px 0px 15px #000000b4;
+}
+
+.settings a:active, .settings a:visited {
+  text-decoration: none;
+}
+
+.settings a span {
+  padding: 0.2rem;
+}
+
+.settings a span:first-of-type {
+  padding-left: 0.5rem;
+  border-radius: 5px 0 0 5px;
+  background-color: #22252c;
+}
+
+.settings a span:last-of-type {
+  padding-right: 0.5rem;
+  border-radius: 0 5px 5px 0;
+  background-color: #f06d31;
+}
+/*# sourceMappingURL=Settings.css.map */

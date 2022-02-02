@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,MAAM;EACX,IAAI,EAAE,MAAM;CAOb;;AAVD,AAIE,cAJY,CAIZ,MAAM,CAAC;EACL,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;EACf,gBAAgB,EAAE,WAAW;CAC9B",
+    "sources": [
+        "SettingsIcon.scss"
+    ],
+    "names": [],
+    "file": "SettingsIcon.css"
+}
